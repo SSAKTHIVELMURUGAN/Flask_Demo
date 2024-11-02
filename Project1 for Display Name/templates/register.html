@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">">
+</head>
+<body>
+    <form action="/home" method="post">
+        <label>Name</label>
+        <input type="text" name="name">
+        <label>Place</label>
+        <input type="text" name="place">
+        <label>Phone Number</label>
+        <input type="number" name="phone">
+        <input type="submit">
+    </form>
+</body>
+</html>

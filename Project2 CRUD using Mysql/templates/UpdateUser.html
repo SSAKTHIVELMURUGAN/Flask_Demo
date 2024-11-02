@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD operation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Update User List</h1>
+    <form action="" method="post">
+        <label>Name: </label>
+        <input type="text" name="Username" value="{{ datas.Username }}" required>
+        <label>Age:</label>
+        <input type="text" name="age" value="{{ datas.age }}" required>
+        <label>City:</label>
+        <input type="text" name="city" value="{{ datas.city }}" required>
+        <input type="submit" value="Update Details">
+    </form>
+</div>
+</body>
+</html>

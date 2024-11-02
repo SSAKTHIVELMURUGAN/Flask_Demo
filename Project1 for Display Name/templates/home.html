@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <h3>Register Success</h3>
+    <table>
+        <tr>
+            <td>Name</td><td>{{ name }}</td>
+        </tr>
+        <tr>
+            <td>Place</td><td>{{ place }}</td>
+        </tr>
+        <tr>
+            <td>Phone Number</td><td>{{ phone }}</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo Section */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.logo-container img {
+    width: 411px;
+    height: 123px;
+}
+
+/* Form Container for Login and Register Pages */
+.form-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 40px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+}
+
+.form-box {
+    width: 300px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-box label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"],
+.form-box button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.form-box button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.form-box button:hover {
+    background-color: #45a049;
+}
+
+/* Home Page Top Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #4CAF50;
+}
+
+.navbar .nav-left img {
+    width: 150px;
+    height: auto;
+}
+
+.navbar .nav-right {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-right a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #357a38;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-right a:hover {
+    background-color: #2e6b2e;
+}

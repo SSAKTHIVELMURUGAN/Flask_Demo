@@ -1,0 +1,116 @@
+/* Center-align the body content and set a light background */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    color: #333;
+}
+
+/* Style the buttons as icon-like */
+button, .icon-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+button:hover, .icon-button:hover {
+    background-color: #45a049;
+}
+
+.add-user {
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Icons for Edit and Delete */
+.edit-button::before, .delete-button::before {
+    content: '✏️'; /* Edit icon */
+    margin-right: 4px;
+}
+
+.delete-button::before {
+    content: '🗑️'; /* Delete icon */
+}
+
+/* Style the form */
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
