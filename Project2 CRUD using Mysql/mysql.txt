@@ -1,0 +1,17 @@
+CREATE DATABASE crud;
+USE crud;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Username VARCHAR(50) NOT NULL,
+    city VARCHAR(50) NOT NULL,
+    age INT NOT NULL
+);
+
+INSERT INTO users (Username, city, age) VALUES 
+('Alice', 'New York', 25),
+('Bob', 'Los Angeles', 30),
+('Charlie', 'Chicago', 35);
+
+
+SELECT * FROM users;
