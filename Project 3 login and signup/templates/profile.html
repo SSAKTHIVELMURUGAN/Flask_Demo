@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile</title>
+</head>
+<body>
+    <h1>Welcome to Your Profile Page</h1>
+    {% if name and email %}
+        <p>Name: {{ name }}</p>
+        <p>Email: {{ email }}</p>
+    {% else %}
+        <p>Please log in to view your profile.</p>
+    {% endif %}
+    <a href="{{ url_for('logout') }}">Logout</a>
+    <!-- Add more details as necessary -->
+</body>
+</html>

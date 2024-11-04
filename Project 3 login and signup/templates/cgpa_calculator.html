@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CGPA Calculator</title>
+</head>
+<body>
+    <h1>CGPA Calculator</h1>
+    <form method="POST">
+        <label for="subjects">Number of Subjects:</label>
+        <input type="number" name="subjects" id="subjects" required>
+        
+        <!-- Add fields dynamically or ask user to input grades/credits per subject -->
+        <div>
+            <label>Grade (e.g., A, B, C):</label>
+            <input type="text" name="grades" required>
+            <label>Credits:</label>
+            <input type="number" name="credits" required>
+        </div>
+
+        <button type="submit">Calculate CGPA</button>
+    </form>
+
+    {% if cgpa %}
+        <h2>Your CGPA: {{ cgpa }}</h2>
+    {% endif %}
+</body>
+</html>

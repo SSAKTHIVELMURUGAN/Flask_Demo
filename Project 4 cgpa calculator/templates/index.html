@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>CGPA Calculator</h2>
+        <form method="POST">
+            <div id="subject-container">
+                <div class="form-group">
+                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                    <input type="number" name="grade" class="form-control mt-2" placeholder="Grade" step="0.01" required>
+                </div>
+            </div>
+            <button type="button" class="btn btn-secondary" id="add-subject">Add Another Subject</button>
+            <button type="submit" class="btn btn-primary mt-3">Calculate CGPA</button>
+        </form>
+
+        {% if cgpa is not none %}
+            <h4 class="mt-4">Your CGPA: {{ cgpa | default('N/A') | round(2) }}</h4>
+        {% endif %}
+    </div>
+
+    <script>
+        // JavaScript to dynamically add subject and grade fields
+        document.getElementById('add-subject').onclick = function() {
+            var container = document.getElementById('subject-container');
+            var newSubject = document.createElement('div');
+            newSubject.className = 'form-group';
+            newSubject.innerHTML = `
+                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                <input type="number" name="grade" class="form-control mt-2" placeholder="Grade" step="0.01" required>
+            `;
+            container.appendChild(newSubject);
+        };
+    </script>
+</body>
+</html>

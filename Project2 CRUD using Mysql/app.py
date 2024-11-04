@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.config["MYSQL_HOST"] = 'localhost'
 app.config["MYSQL_USER"] = 'root'
 app.config["MYSQL_PASSWORD"] = 'Password'
-app.config["MYSQL_DB"] = 'crud' #table name
+app.config["MYSQL_DB"] = 'crud' # table name
 app.config["MYSQL_CURSORCLASS"] = 'DictCursor'
 mysql = MySQL(app)
 
@@ -65,3 +65,4 @@ def deleteUser(id):
 
 if __name__ == "__main__":
     app.run(debug=True)
+ 
